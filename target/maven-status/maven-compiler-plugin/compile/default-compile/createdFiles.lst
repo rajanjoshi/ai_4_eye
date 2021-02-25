@@ -1,0 +1,7 @@
+com\solehin\SpringBootWebApplication.class
+com\solehin\controller\IndexController.class
+com\solehin\controller\SearchController.class
+com\solehin\model\AjaxResponseBody.class
+com\solehin\model\SearchCriteria.class
+com\solehin\model\User.class
+com\solehin\services\UserService.class

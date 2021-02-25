@@ -25,8 +25,7 @@ function take_snapshot() {
 function fire_ajax_submit() {
 
     var submit = {}
-    submit["username"] = $("#username").val();
-    //submit["email"] = $("#email").val();
+    submit["cardNumber"] = $("#cardNumber").val();
 
     $("#btn-submit").prop("disabled", true);
 
@@ -40,22 +39,22 @@ function fire_ajax_submit() {
         timeout: 600000,
         success: function (data) {
 
-            var json = "<h4>Ajax Response</h4><pre>"
-                + JSON.stringify(data, null, 4) + "</pre>";
-            $('#feedback').html(json);
-
-            console.log("SUCCESS : ", data);
-            $("#btn-submit").prop("disabled", false);
+//            var json = "<h4>Ajax Response</h4><pre>"
+//                + JSON.stringify(data, null, 4) + "</pre>";
+//            $('#feedback').html(json);
+//
+//            console.log("SUCCESS : ", data);
+//            $("#btn-submit").prop("disabled", false);
 
         },
         error: function (e) {
 
-            var json = "<h4>Ajax Response</h4><pre>"
-                + e.responseText + "</pre>";
-            $('#feedback').html(json);
-
-            console.log("ERROR : ", e);
-            $("#btn-submit").prop("disabled", false);
+//            var json = "<h4>Ajax Response</h4><pre>"
+//                + e.responseText + "</pre>";
+//            $('#feedback').html(json);
+//
+//            console.log("ERROR : ", e);
+//            $("#btn-submit").prop("disabled", false);
 
         }
     });
